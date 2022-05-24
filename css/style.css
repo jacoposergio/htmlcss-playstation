@@ -1,5 +1,5 @@
 body{
-    background-color: brown;
+    background-color: rgb(167, 144, 49);
     font-family: Arial, sans-serif;
 }
 
@@ -25,6 +25,31 @@ ul li{
 
 /* Utilities  */
 
+
+.big_game_card h2{
+    font-weight: 600;
+    padding-top: 10rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.big_game_card p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.reusable_card h2{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.reusable_card p{
+    color: #787878;
+}
+
+/* buttons  */
+
 .ms_btn{
     color: white;
     background-color: black;
@@ -35,23 +60,16 @@ ul li{
 .ms_btn.ms_common{
     display: inline-block;
     color: white;
-    background-color: black;
+    background-color: #363636;
     padding: 0.3rem 0.7rem;
     border-radius: 1.2rem;
     font-size: 0.8rem;
     font-weight: 600;
 }
 
-.big_game_card h2{
-    font-weight: 600;
-    padding-top: 10rem;
-    color: white;
-}
 
-.big_game_card p{
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: white;
+.ms_btn.ms_common.blue_btn{
+    background-color: #2d64e6;
 }
 
 
@@ -146,6 +164,7 @@ header{
     font-size: 1.4rem;
 }
 
+
 /* |||||||||||||||||||| MAIN |||||||||||||||||||||||    */
 
   /* jumbotron  */
@@ -155,10 +174,24 @@ header{
   }
 
   .ms_jumbotron_container{
-     
-      object-fit: cover;
-      background-color: rgb(176, 180, 185);
+      background-image: url(../img/returnal-listing-thumb-01-ps5.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 90%;
       margin-bottom: 1rem;
+      position: relative;
+      z-index: -1;
+  }
+
+  .ms_overlay{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: black;
+      opacity: 0.1;
+      z-index: -1;
   }
 
   .big_game_card .ms_btn.ms_common{
@@ -174,6 +207,31 @@ header{
 
  .small_game_card .img_container img{
      border-radius: 1rem;
+ }
+
+ .small_game_card .blue_frame{
+    outline: 3px solid blue;
+    border-radius: 0.9rem;
+    outline-offset: 3px;
+ }
+
+  /* console reveal  */
+
+ .console_reveal_container .reusable_card h3{
+     text-transform: uppercase;
+     font-size: 0.7rem;
+     color: blue;
+     margin-top: 5rem;
+ }
+
+ /* console playstation  */
+
+ .console_playstation_container .reusable_card h2{
+     margin-top: 3rem;
+ }
+
+ .console_playstation_container .reusable_card .ms_btn{
+     margin-bottom: 1rem;
  }
 
 
@@ -200,6 +258,17 @@ header{
     body{
         background-color: PURPLE;
     }
+
+     /* console playstation  */
+
+ .console_playstation_container .reusable_card h2{
+     margin-top: 0;
+ }
+
+ .console_playstation_container .reusable_card .ms_btn{
+     margin-bottom: 0;
+ }
+
  
 
 }
@@ -211,6 +280,13 @@ header{
     body{
         background-color: rgb(13, 232, 13);
     }
+
+    /* jumbotron  */
+
+    .big_game_card h2{
+        padding-top: 15rem;
+    }
+    
 
     
     /* ||||||| HEADER  ||||||||   */
@@ -224,9 +300,16 @@ header{
     }
 
 
+/* LG */
 
-    
+@media screen and (min-width:  1200px) {
 
+        /* jumbotron  */
+
+        .big_game_card h2{
+            padding-top: 20rem;
+        }
+        
 
 
 
