@@ -38,6 +38,8 @@ ul li{
     background-color: black;
     padding: 0.3rem 0.7rem;
     border-radius: 1.2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 
 .big_game_card h2{
@@ -153,9 +155,10 @@ header{
   }
 
   .ms_jumbotron_container{
-      background-image: url(../img/returnal-listing-thumb-01-ps5.jpg);
+     
       object-fit: cover;
       background-color: rgb(176, 180, 185);
+      margin-bottom: 1rem;
   }
 
   .big_game_card .ms_btn.ms_common{
@@ -163,7 +166,15 @@ header{
       margin-bottom: 2rem;
   }
 
+  /* small cards  */
 
+  .small_game_card {
+      margin: 0.5rem 0;
+  }
+
+ .small_game_card .img_container img{
+     border-radius: 1rem;
+ }
 
 
 /* SM */
