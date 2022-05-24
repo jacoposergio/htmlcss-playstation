@@ -25,11 +25,31 @@ ul li{
 
 /* Utilities  */
 
-.ms_btn_fat{
+.ms_btn{
     color: white;
     background-color: black;
     padding: 0.5rem 0.7rem;
     border-radius: 1.2rem;
+}
+
+.ms_btn.ms_common{
+    display: inline-block;
+    color: white;
+    background-color: black;
+    padding: 0.3rem 0.7rem;
+    border-radius: 1.2rem;
+}
+
+.big_game_card h2{
+    font-weight: 600;
+    padding-top: 10rem;
+    color: white;
+}
+
+.big_game_card p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
 }
 
 
@@ -121,8 +141,27 @@ header{
 }
 
 .hamburger_menu a i{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
+
+/* |||||||||||||||||||| MAIN |||||||||||||||||||||||    */
+
+  /* jumbotron  */
+  
+  main{
+      margin-top: 4.8rem;
+  }
+
+  .ms_jumbotron_container{
+      background-image: url(../img/returnal-listing-thumb-01-ps5.jpg);
+      object-fit: cover;
+      background-color: rgb(176, 180, 185);
+  }
+
+  .big_game_card .ms_btn.ms_common{
+      background-color: red;
+      margin-bottom: 2rem;
+  }
 
 
 
