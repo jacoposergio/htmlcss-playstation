@@ -32,7 +32,7 @@ section{
 
 .big_game_card h2{
     font-weight: 600;
-    padding-top: 10rem;
+    /* padding-top: 10rem; */
     margin-bottom: 1.5rem;
     color: white;
 }
@@ -208,11 +208,18 @@ header{
     cursor: pointer;
 }
 
+.big_game_card .img_container{
+    width: 50%;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
 
   /* small cards  */
 
   .small_game_card {
       margin: 0.5rem 0;
+      padding-bottom: 1rem;
   }
 
  .small_game_card .img_container img{
@@ -275,11 +282,20 @@ header{
     z-index: 0;
 }
 
-/* nuove uscite  */
-
 #it_takes_two{
     padding-bottom: 0;
 }
+
+.it_takes_two_container .big_game_card .img_container{
+    width: 50%;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+
+/* nuove uscite  */
+
+
 
 .new_releases_text h3{
     font-size: 1.2rem;
@@ -329,6 +345,23 @@ header{
         background-color: PURPLE;
     }
 
+    /* jumbotron  */
+
+    .big_game_card .img_container{
+        width: 80%;
+        margin-bottom: 2rem;
+        margin-top: 5rem;
+    }
+
+    /* it takes two   */
+
+    .it_takes_two_container .big_game_card .img_container{
+        width: 80%;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+    
+
      /* console playstation  */
 
  .console_playstation_container .reusable_card h2{
@@ -361,10 +394,10 @@ header{
 
     /* jumbotron  */
 
-    .big_game_card h2{
+    /* .big_game_card h2{
         padding-top: 15rem;
     }
-    
+     */
 
     
     /* ||||||| HEADER  ||||||||   */
@@ -383,10 +416,10 @@ header{
 @media screen and (min-width:  1200px) {
 
         /* jumbotron  */
-
+/* 
         .big_game_card h2{
             padding-top: 20rem;
-        }
+        } */
         
     }
 
