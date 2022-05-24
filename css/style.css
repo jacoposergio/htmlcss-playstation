@@ -177,10 +177,10 @@ header{
       background-image: url(../img/returnal-listing-thumb-01-ps5.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: 90%;
+      background-position-x: 90%;
       margin-bottom: 1rem;
       position: relative;
-      z-index: -1;
+      z-index: 0;
   }
 
   .ms_overlay{
@@ -190,7 +190,7 @@ header{
       left: 0;
       right: 0;
       background-color: black;
-      opacity: 0.1;
+      opacity: 0.2;
       z-index: -1;
   }
 
@@ -198,6 +198,12 @@ header{
       background-color: red;
       margin-bottom: 2rem;
   }
+
+  .big_game_card a{
+    z-index: 20;
+    cursor: pointer;
+}
+
 
   /* small cards  */
 
@@ -209,10 +215,11 @@ header{
      border-radius: 1rem;
  }
 
- .small_game_card .blue_frame{
+ .small_game_card:hover{
     outline: 3px solid blue;
     border-radius: 0.9rem;
     outline-offset: 3px;
+    cursor: pointer;
  }
 
   /* console reveal  */
@@ -233,6 +240,24 @@ header{
  .console_playstation_container .reusable_card .ms_btn{
      margin-bottom: 1rem;
  }
+
+ /* console pictures  */
+
+ .console_pictures_container .col_container{
+     margin-top: 0.5rem;
+ }
+
+ .console_pictures_container .col_container h5{
+     font-size: 0.8rem;
+     font-weight: 600;
+ }
+
+ .console_pictures_container .col_container img:hover{
+    border-bottom: 4px solid blue;
+    cursor: pointer;
+}
+
+
 
 
 /* SM */
@@ -310,7 +335,7 @@ header{
             padding-top: 20rem;
         }
         
-
+    }
 
 
 
