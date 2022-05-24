@@ -53,23 +53,29 @@ header{
        background-color: rgb(209, 148, 67);
    }
 
+   .bottom_header_content {
+       height: 100%;
+   }
+
    .play_logo_container{
        padding: 0 0.5rem;
    }
 
    .play_logo_container img{
-    height: 90%;
-    padding-bottom: 5px;
+    height: 100%;
+    padding-bottom: px;
 
 }
 
   .nav_right{
       align-content: center;
+      height: 100%;
   }
 
    .main_menu{
-       align-items: last baseline;
        display: none;
+       height: 100%;
+       align-items: last baseline;
    }
 
    .main_menu a img{
@@ -80,7 +86,6 @@ header{
        font-size: 0.8rem;
        font-weight: 600;
        margin-right: 1rem;
-       padding-bottom: 10px;
    }
 
    .main_menu ul li img{
