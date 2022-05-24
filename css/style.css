@@ -22,6 +22,10 @@ ul li{
     list-style-type: none;
 }
 
+section{
+    padding-bottom: 1rem;
+}
+
 
 /* Utilities  */
 
@@ -215,7 +219,7 @@ header{
      border-radius: 1rem;
  }
 
- .small_game_card:hover{
+ .small_game_card img:hover{
     outline: 3px solid blue;
     border-radius: 0.9rem;
     outline-offset: 3px;
@@ -248,16 +252,50 @@ header{
  }
 
  .console_pictures_container .col_container h5{
+     display: none;
      font-size: 0.8rem;
      font-weight: 600;
  }
 
  .console_pictures_container .col_container img:hover{
     border-bottom: 4px solid blue;
+    margin-bottom: -4px;
     cursor: pointer;
 }
 
+ /* it takes two   */
 
+ .it_takes_two_container{
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 0;
+}
+
+/* nuove uscite  */
+
+#it_takes_two{
+    padding-bottom: 0;
+}
+
+.new_releases_text h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.new_releases_text h4{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.small_game_card h5{
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
 
 
 /* SM */
@@ -294,7 +332,15 @@ header{
      margin-bottom: 0;
  }
 
- 
+ /* console picutres   */
+
+ .console_pictures_container .col_container h5{
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
 
 }
 
