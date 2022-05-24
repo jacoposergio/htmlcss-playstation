@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(167, 144, 49);
+    /* background-color: rgb(167, 144, 49); */
     font-family: Arial, sans-serif;
 }
 
@@ -26,6 +26,11 @@ section{
     padding-bottom: 1rem;
 }
 
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
 
 /* Utilities  */
 
@@ -86,7 +91,6 @@ header{
     top: 0;
     width: 100%;
     z-index: 99;
-    
 }
 
 /* top header  */
@@ -132,7 +136,7 @@ header{
    .main_menu{
        display: none;
        height: 100%;
-       align-items: last baseline;
+       align-items: center;
    }
 
    .main_menu ul li{
@@ -151,8 +155,7 @@ header{
    }
 
    .main_menu ul li .ms_lens{
-    height: 1rem;
-    padding-bottom: 0.1rem;
+    height: 1.3rem;
    }
 
 .hamburger_menu{
@@ -210,7 +213,7 @@ header{
 
 .big_game_card .img_container{
     width: 50%;
-    margin-top: 5rem;
+    margin-top: 7rem;
     margin-bottom: 1rem;
 }
 
@@ -292,10 +295,7 @@ header{
     margin-top: 2rem;
 }
 
-
 /* nuove uscite  */
-
-
 
 .new_releases_text h3{
     font-size: 1.2rem;
@@ -318,6 +318,14 @@ header{
 .registered_trademark{
     font-size: 0.6rem;
     vertical-align: super;
+}
+
+.console_explore_container .reusable_card h2{
+    font-size: 1.3rem;
+}
+
+.console_explore_container .reusable_card p{
+    font-size: 0.9rem;
 }
 
 /* playstation plus  */
@@ -349,7 +357,7 @@ header{
 /* new promos  */
 
 .new_promos_container h2{
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .new_promos_container .img_container{
@@ -385,7 +393,7 @@ header{
 @media screen and (min-width:  576px) {
 
     body{
-        background-color: GREEN;
+        /* background-color: GREEN; */
     }
 
     
@@ -401,7 +409,7 @@ header{
 @media screen and (min-width:  768px) {
 
     body{
-        background-color: PURPLE;
+        /* background-color: PURPLE; */
     }
 
     /* jumbotron  */
@@ -409,7 +417,7 @@ header{
     .big_game_card .img_container{
         width: 80%;
         margin-bottom: 2rem;
-        margin-top: 5rem;
+        margin-top: 10rem;
     }
 
     /* it takes two   */
@@ -430,13 +438,20 @@ header{
         margin-bottom: 0;
     }
 
-    /* console picutres   */
+    /* console pictures   */
 
     .console_pictures_container .col_container h5{
         display: block;
         font-size: 0.8rem;
         font-weight: 600;
     }
+
+    /* esplora playstation  */
+
+    #console_explore{
+        margin-bottom: 1.5rem;
+    }
+
 
     /* playstation plus  */
 
@@ -474,7 +489,7 @@ header{
 @media screen and (min-width:  992px) {
 
     body{
-        background-color: rgb(13, 232, 13);
+        /* background-color: rgb(13, 232, 13); */
     }
 
     /* ||||||| HEADER  ||||||||   */
