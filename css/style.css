@@ -14,8 +14,22 @@ a{
     color: inherit;
 }
 
+ul{
+    padding-left: 0;
+}
+
 ul li{
     list-style-type: none;
+}
+
+
+/* Utilities  */
+
+.ms_btn_fat{
+    color: white;
+    background-color: black;
+    padding: 0.5rem 0.7rem;
+    border-radius: 1.2rem;
 }
 
 
@@ -24,6 +38,11 @@ ul li{
 
 header{
     font-family: Helvetica, arial, sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    
 }
 
 /* top header  */
@@ -50,7 +69,7 @@ header{
 
    .bottom_header{
        height: 3rem;
-       background-color: rgb(209, 148, 67);
+       background-color: white;
    }
 
    .bottom_header_content {
@@ -58,28 +77,18 @@ header{
    }
 
    .play_logo_container{
-       padding: 0 0.5rem;
+       padding-left: 0.5rem;
+       padding-right: 0.7rem;
    }
 
    .play_logo_container img{
     height: 100%;
-    padding-bottom: px;
-
 }
-
-  .nav_right{
-      align-content: center;
-      height: 100%;
-  }
 
    .main_menu{
        display: none;
        height: 100%;
        align-items: last baseline;
-   }
-
-   .main_menu a img{
-      height: 0.5rem;
    }
 
    .main_menu ul li{
@@ -88,11 +97,32 @@ header{
        margin-right: 1rem;
    }
 
-   .main_menu ul li img{
+   .main_menu ul li .chevron{
+    height: 0.5rem;
     margin-left: 0.5rem;
+   }
+
+   img.chevron{
+    height: 0.5rem;
+   }
+
+   .main_menu ul li .ms_lens{
+    height: 1rem;
+    padding-bottom: 0.1rem;
+   }
+
+.hamburger_menu{
+    padding: 0 1rem;
 }
 
+.hamburger_menu_container{
+    align-items: center;
+    height: 3rem;
+}
 
+.hamburger_menu a i{
+    font-size: 1.5rem;
+}
 
 
 
