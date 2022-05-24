@@ -239,7 +239,7 @@ header{
      text-transform: uppercase;
      font-size: 0.7rem;
      color: blue;
-     margin-top: 5rem;
+     margin-top: 2.5rem;
  }
 
  /* console playstation  */
@@ -320,8 +320,44 @@ header{
     vertical-align: super;
 }
 
+/* play station plus  */
 
-/* SM */
+.playstation_plus_container {
+    background-color: #bebcbb
+    ;
+}
+
+.playstation_plus_container .img_container{
+    width: 60%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.playstation_plus_container h3{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.playstation_plus_container .pp_img_container{
+    display: none;
+}
+
+.playstation_plus_container .ms_btn{
+    margin-bottom: 2rem;
+}
+
+/* new promos  */
+
+.new_promos_container h2{
+    margin-top: 1rem;
+}
+
+
+.new_promos_container p{
+    margin-bottom: 2rem;
+}
+
+/* //////////////// SM /////////////////  */
 
 @media screen and (min-width:  576px) {
 
@@ -338,7 +374,7 @@ header{
 
 
 
-   /* MD  */
+   /* /////////////////////// MD /////////////////// */
 @media screen and (min-width:  768px) {
 
     body{
@@ -360,31 +396,50 @@ header{
         margin-bottom: 3rem;
         margin-top: 2rem;
     }
-    
 
      /* console playstation  */
 
- .console_playstation_container .reusable_card h2{
-     margin-top: 0;
- }
+    .console_playstation_container .reusable_card h2{
+        margin-top: 0;
+    }
 
- .console_playstation_container .reusable_card .ms_btn{
-     margin-bottom: 0;
- }
+    .console_playstation_container .reusable_card .ms_btn{
+        margin-bottom: 0;
+    }
 
- /* console picutres   */
+    /* console picutres   */
 
- .console_pictures_container .col_container h5{
-    display: block;
-    font-size: 0.8rem;
-    font-weight: 600;
+    .console_pictures_container .col_container h5{
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    /* playstatio plus  */
+
+
+    .playstation_plus_container .pp_img_container{
+        display: block;
+    }
+
+    .playstation_plus_container .img_container{
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .playstation_plus_container h3{
+        margin-bottom: rem;
+    }
+
+
+    .playstation_plus_container .ms_btn{
+        margin-bottom: 0rem;
+    }
+
+
 }
 
-
-
-}
-
-/* LG */
+/* //////////////// LG /////////////////////  */
 
 @media screen and (min-width:  992px) {
 
@@ -410,24 +465,4 @@ header{
         display: none;
     }
 
-
-/* LG */
-
-@media screen and (min-width:  1200px) {
-
-        /* jumbotron  */
-/* 
-        .big_game_card h2{
-            padding-top: 20rem;
-        } */
-        
-    }
-
-
-
-
-
-
-
-
-
+}
