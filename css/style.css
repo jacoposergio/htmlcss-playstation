@@ -15,6 +15,10 @@ a{
     color: inherit;
 }
 
+a:hover{
+    color: inherit;
+}
+
 ul li{
     list-style-type: none;
 }
@@ -171,6 +175,12 @@ header{
         font-size: 1.4rem;
     }
 
+    a.ms_btn:hover{
+        color: white;
+    }
+
+
+
 
 /* |||||||||||||||||||| MAIN |||||||||||||||||||||||    */
 
@@ -230,7 +240,7 @@ header{
  }
 
  .small_game_card img:hover{
-    outline: 3px solid blue;
+    outline: 3px solid  #2d64e6;
     border-radius: 0.9rem;
     outline-offset: 3px;
     cursor: pointer;
@@ -241,7 +251,7 @@ header{
  .console_reveal_container .reusable_card h3{
      text-transform: uppercase;
      font-size: 0.7rem;
-     color: blue;
+     color:  #2d64e6;
      margin-top: 2.5rem;
  }
 
@@ -265,10 +275,11 @@ header{
      display: none;
      font-size: 0.8rem;
      font-weight: 600;
+     margin-top: 0.3rem;
  }
 
  .console_pictures_container .col_container img:hover{
-    border-bottom: 4px solid blue;
+    border-bottom: 4px solid  #2d64e6;
     margin-bottom: -4px;
     cursor: pointer;
 }
@@ -336,9 +347,9 @@ header{
 
 /* playstation plus  */
 
-.playstation_plus_container {
-    background-color: #bebcbb
-    ;
+#playstation_plus {
+    background-color: #bebcbb;
+    padding-bottom: 0;
 }
 
 .playstation_plus_container .img_container{
@@ -374,11 +385,19 @@ header{
     margin-bottom: 2rem;
 }
 
-/* playstation now  */
-
 #new_promos{
     margin-bottom: 1rem;
 }
+
+/* playstation now  */
+
+#playstation_now{
+    background-color: #161c3b;
+    color: white;
+    padding-bottom: 0;
+}
+
+
 
 /* social media  */
 
@@ -398,7 +417,7 @@ header{
 
 
 footer{
-    background-color: rgb(124, 124, 110);
+    background-color: #00439c;
     color: white;
 }
 
@@ -448,8 +467,9 @@ footer .bottom_footer h6{
     margin-top: 1.5rem;
 }
 
-
-
+.bottom_footer h6 a:hover{
+    text-decoration: underline;
+}
 
 
 /* //////////////// SM /////////////////  */
@@ -463,10 +483,6 @@ footer .bottom_footer h6{
    /* /////////////////////// MD /////////////////// */
 
 @media screen and (min-width:  768px) {
-
-    body{
-        /* background-color: PURPLE; */
-    }
 
     /* jumbotron  */
 
@@ -539,29 +555,25 @@ footer .bottom_footer h6{
 
  /* ||||||||||||||||| FOOTER md ||||||||||||||| */
 
- .top_footer {
-    padding-top: 3rem;
- }
- 
- footer .top_footer h6{
-     margin-top: 0.3rem;
-     margin-bottom: 0;
- }
+    .top_footer {
+        padding-top: 3rem;
+    }
+    
+    footer .top_footer h6{
+        margin-top: 0.3rem;
+        margin-bottom: 0;
+    }
 
- .bottom_footer{
-     margin-top: 0rem;
- }
- 
+    .bottom_footer{
+        margin-top: 0rem;
+    }
+    
 
 }
 
 /* //////////////// LG /////////////////////  */
 
 @media screen and (min-width:  992px) {
-
-    body{
-        /* background-color: rgb(13, 232, 13); */
-    }
 
     /* ||||||| HEADER  ||||||||   */
       
