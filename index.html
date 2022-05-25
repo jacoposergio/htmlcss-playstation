@@ -19,55 +19,255 @@
        </div>
         <!-- bottom header   -->
         <div class="bottom_header">
-            <div class="bottom_header_content d-flex justify-content-between">
-                <div class="nav_left d-flex">
-                    <div class="play_logo_container">
-                      <img src="img/play_logo.svg" alt="playstation logo" />
-                    </div>
-                    <nav class="main_menu">
-                        <ul class="d-flex">
-                            <li>
-                                <a href="#">Giochi<span><img class="chevron" src="img/chevron-down-solid.svg" alt="freccia giù"></span></a>
-                            </li>
-                            <li>
-                                <a href="#">Hardware<span><img class="chevron" src="img/chevron-down-solid.svg" alt="freccia giù"></span></a>
-                            </li>
-                            <li>
-                                <a href="#">Servizi<span> <img class="chevron" src="img/chevron-down-solid.svg" alt="freccia giù"></span></a>
-                            </li>
-                            <li>
-                                <a href="#">Novità<span> <img class="chevron" src="img/chevron-down-solid.svg" alt="freccia giù"></span></a>
-                            </li>
-                            <li>
-                                <a href="#">Fai acquisti<span> <img class="chevron" src="img/chevron-down-solid.svg" alt="freccia giù"></span></a>
-                            </li>
-                            <li>
-                                <a href="#">Supporto<span> <img class="chevron" src="img/chevron-down-solid.svg" alt="freccia giù"></span></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="hamburger_menu">
-                    <div class="hamburger_menu_container d-flex">
-                      <a href="#"><i class="fa-solid fa-bars"></i></a>
-                   </div>
-                </div>
-                <div class="main_menu">
-                    <ul class="d-flex">
-                        <li>
-                            <a href="#planning">My PlayStation<span> <img class="chevron" src="img/chevron-down-solid.svg" alt=""></span></a>
-                        </li>
-                        <li>
-                            <a class="ms_btn" href="#"> Accedi</a>
-                        </li>
-                        <li>
-                          <a href="#"><img class="ms_lens" src="img/lens.svg" alt="search"></a> 
-                        </li>
-                       
+              <!-- navbar bootstrap -->
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- brand link (il primo a sinistra) -->
+          <a class="navbar-brand" href="#">
+              <img src="img/play_logo.svg" alt="logo playstation" width="40px">
+          </a>
+          <!-- hamburger menu icon -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- all navbar links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- nav nav-item con dropdown -->
+              <li class="nav-item dropdown">
+                <!-- link <nav-item></nav-item> -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Giochi
+                </a>
+                <!-- elemento dropdown -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="play-menu">
+                      <a class="dropdown-item play-menu-item" href="#">
+                          <img src="img/play-menu-ico.png" alt="">
+                          <span>link</span>
+                      </a>
+                      <a class="dropdown-item play-menu-item" href="#">
+                        <img src="img/play-menu-ico.png" alt="">
+                        <span>link</span>
+                    </a>
+                    <a class="dropdown-item play-menu-item" href="#">
+                        <img src="img/play-menu-ico.png" alt="">
+                        <span>link</span>
+                    </a>
+                  </li>
+
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="bottom-play-menu">
+                      <ul>
+                          <li><a class="dropdown-item" href="#">link 1</a></li>
+                          <li><a class="dropdown-item" href="#">link 2</a></li>
+                          <li><a class="dropdown-item" href="#">link 3</a></li>
+                      </ul>
+                      
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <!-- link <nav-item></nav-item> -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Hardware
+                </a>
+                <!-- elemento dropdown -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="play-menu">
+                      <a class="dropdown-item play-menu-item" href="#">
+                          <img src="img/play-menu-ico.png" alt="">
+                          <span>link dell'altro 1</span>
+                      </a>
+                      <a class="dropdown-item play-menu-item" href="#">
+                        <img src="img/play-menu-ico.png" alt="">
+                        <span>link</span>
+                    </a>
+                    <a class="dropdown-item play-menu-item" href="#">
+                        <img src="img/play-menu-ico.png" alt="">
+                        <span>link</span>
+                    </a>
+                  </li>
+
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="bottom-play-menu">
+                      <ul>
+                          <li><a class="dropdown-item" href="#">link 1</a></li>
+                          <li><a class="dropdown-item" href="#">link 2</a></li>
+                          <li><a class="dropdown-item" href="#">link 3</a></li>
+                      </ul>
+                      
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <!-- link <nav-item></nav-item> -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servizi
+                </a>
+                <!-- elemento dropdown -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="play-menu">
+                      <a class="dropdown-item play-menu-item" href="#">
+                          <img src="img/play-menu-ico.png" alt="">
+                          <span>link dell'altro 1</span>
+                      </a>
+                      <a class="dropdown-item play-menu-item" href="#">
+                        <img src="img/play-menu-ico.png" alt="">
+                        <span>link</span>
+                    </a>
+                    <a class="dropdown-item play-menu-item" href="#">
+                        <img src="img/play-menu-ico.png" alt="">
+                        <span>link</span>
+                    </a>
+                  </li>
+
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="bottom-play-menu">
+                      <ul>
+                          <li><a class="dropdown-item" href="#">link 1</a></li>
+                          <li><a class="dropdown-item" href="#">link 2</a></li>
+                          <li><a class="dropdown-item" href="#">link 3</a></li>
+                      </ul>
+                      
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <!-- link <nav-item></nav-item> -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Novità
+                </a>
+                <!-- elemento dropdown -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="play-menu">
+                      <a class="dropdown-item play-menu-item" href="#">
+                          <img src="img/play-menu-ico.png" alt="">
+                          <span>link</span>
+                      </a>
+                      <a class="dropdown-item play-menu-item" href="#">
+                        <img src="img/play-menu-ico.png" alt="">
+                        <span>link</span>
+                    </a>
+                    <a class="dropdown-item play-menu-item" href="#">
+                        <img src="img/play-menu-ico.png" alt="">
+                        <span>link</span>
+                    </a>
+                  </li>
+
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="bottom-play-menu">
+                      <ul>
+                          <li><a class="dropdown-item" href="#">link 1</a></li>
+                          <li><a class="dropdown-item" href="#">link 2</a></li>
+                          <li><a class="dropdown-item" href="#">link 3</a></li>
+                      </ul>
+                      
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <!-- link <nav-item></nav-item> -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Fai acquisti
+                </a>
+                <!-- elemento dropdown -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="play-menu">
+                      <a class="dropdown-item play-menu-item" href="#">
+                          <img src="img/play-menu-ico.png" alt="">
+                          <span>link dell'altro 1</span>
+                      </a>
+                      <a class="dropdown-item play-menu-item" href="#">
+                        <img src="img/play-menu-ico.png" alt="">
+                        <span>link</span>
+                    </a>
+                    <a class="dropdown-item play-menu-item" href="#">
+                        <img src="img/play-menu-ico.png" alt="">
+                        <span>link</span>
+                    </a>
+                  </li>
+
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="bottom-play-menu">
+                      <ul>
+                          <li><a class="dropdown-item" href="#">link 1</a></li>
+                          <li><a class="dropdown-item" href="#">link 2</a></li>
+                          <li><a class="dropdown-item" href="#">link 3</a></li>
+                      </ul>
+                      
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <!-- link <nav-item></nav-item> -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Supporto
+                </a>
+                <!-- elemento dropdown -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="play-menu">
+                      <a class="dropdown-item play-menu-item" href="#">
+                          <img src="img/play-menu-ico.png" alt="">
+                          <span>link dell'altro2</span>
+                      </a>
+                      <a class="dropdown-item play-menu-item" href="#">
+                        <img src="img/play-menu-ico.png" alt="">
+                        <span>link</span>
+                    </a>
+                    <a class="dropdown-item play-menu-item" href="#">
+                        <img src="img/play-menu-ico.png" alt="">
+                        <span>link</span>
+                    </a>
+                  </li>
+
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="bottom-play-menu">
+                      <ul>
+                          <li><a class="dropdown-item" href="#">link 1</a></li>
+                          <li><a class="dropdown-item" href="#">link 2</a></li>
+                          <li><a class="dropdown-item" href="#">link 3</a></li>
+                      </ul>
+                      
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+            <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+                <li class="nav-item dropdown me-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      My Playstation
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li class="play-menu">
+                          <a class="dropdown-item play-menu-item" href="#">
+                              <img src="img/play-menu-ico.png" alt="">
+                              <span>link</span>
+                          </a>
+                          <a class="dropdown-item play-menu-item" href="#">
+                            <img src="img/play-menu-ico.png" alt="">
+                            <span>link</span>
+                        </a>
+                        <a class="dropdown-item play-menu-item" href="#">
+                            <img src="img/play-menu-ico.png" alt="">
+                            <span>link</span>
+                        </a>
+                      </li>
                     </ul>
-                </div>
-            </div>
+                  </li>
+                  <button type="button" class="btn btn-dark rounded-pill me-2">Accedi</button>
+                  <a class="lens_container" href="#"><img src="img/lens.svg" width="20px" alt="lens image"></a>
+            </ul>
+          </div>
         </div>
+      </nav>
+   </div>
     </header>
     <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <main>
@@ -630,5 +830,6 @@
             </div>    
         </div>    
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
 </body>
 </html>

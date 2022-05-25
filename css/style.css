@@ -124,62 +124,56 @@ header{
        background-color: white;
    }
 
-   .bottom_header_content {
-       height: 100%;
+   .navbar{
+       padding-top: 0;
+       padding-bottom: 0;
    }
 
-   .play_logo_container{
-       padding-left: 0.5rem;
-       padding-right: 0.7rem;
-   }
-
-   .play_logo_container img{
-    height: 100%;
+  /* selettore elemento dropdown uguale a quello di bootstrap */
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
 }
 
-    .main_menu{
-        display: none;
-        height: 100%;
-        align-items: center;
-    }
+/* primo elemento lista (con le immagini playstation) */
+.navbar-expand-lg .navbar-nav .play-menu {
+    display: flex;
+    justify-content: center;
+}
 
-    .main_menu ul li{
-        font-size: 0.8rem;
-        font-weight: 600;
-        margin-right: 1rem;
-    }
+/* elementi dentro a .play-menu (quelli con le immagini playstation + link) */
+.navbar-expand-lg .navbar-nav .play-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
 
-   .main_menu ul li .chevron{
-    height: 0.5rem;
-    margin-left: 0.5rem;
-   }
+/* elemento lista in basso (dopo la linea) */
+.navbar-expand-lg .navbar-nav .bottom-play-menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
-   img.chevron{
-    height: 0.5rem;
-   }
+.nav-link{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
 
-   .main_menu ul li .ms_lens{
-    height: 1.3rem;
-   }
+.navbar-nav .btn{
+    font-size: 0.8rem;
+}
 
-    .hamburger_menu{
-        padding: 0 1rem;
-    }
+.lens_container{
+    padding-top: 0.2rem;
+}
 
-    .hamburger_menu_container{
-        align-items: center;
-        height: 3rem;
-    }
-
-    .hamburger_menu a i{
-        font-size: 1.4rem;
-    }
-
-    a.ms_btn:hover{
-        color: white;
-    }
-
-
+.navbar-toggler-icon{
+    width: 0.8rem;
+}
 
 
 /* |||||||||||||||||||| MAIN |||||||||||||||||||||||    */
@@ -581,10 +575,6 @@ footer .bottom_footer h6{
     display: flex;
    }
 
-    .hamburger_menu{
-        display: none;
-    }
-
    /* social media lg */
 
    .social_media_container{
@@ -594,3 +584,4 @@ footer .bottom_footer h6{
 
 
 }
+
