@@ -280,7 +280,6 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 50%;
-    margin-bottom: 1rem;
     position: relative;
     z-index: 0;
 }
@@ -297,9 +296,15 @@ header{
 
 /* nuove uscite  */
 
+#new_releases{
+    background-color: #1f1f1f;
+    color: white;
+}
+
 .new_releases_text h3{
     font-size: 1.2rem;
     font-weight: 600;
+    padding-top: 2rem;
 }
 
 .new_releases_text h4{
@@ -321,6 +326,7 @@ header{
 }
 
 .console_explore_container .reusable_card h2{
+    margin-top: 2.5rem;
     font-size: 1.3rem;
 }
 
@@ -342,7 +348,7 @@ header{
 }
 
 .playstation_plus_container h3{
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 1.5rem;
 }
 
@@ -396,19 +402,22 @@ footer{
     color: white;
 }
 
+/* top footer   */
+
 .top_footer {
-   padding-top: 3rem;
+   padding-top: 2rem;
 }
 
 footer .logo_container{
     filter: brightness(0) invert(1);
 }
 
-footer h6{
+footer .top_footer h6{
     font-size: 0.5rem;
     font-weight: 600;
     letter-spacing: -0.6px;
-    margin-top: 0.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 footer ul li{
@@ -421,6 +430,24 @@ footer h6 i{
   margin-right: 0.3rem;
 }
 
+/* bottom footer  */
+
+.bottom_footer .sony_interactive_logo_container img{
+    width: 4rem;
+}
+
+footer .bottom_footer h6{
+    font-size: 0.5rem;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.bottom_footer{
+    margin-top: 1.5rem;
+}
+
 
 
 
@@ -429,18 +456,9 @@ footer h6 i{
 
 @media screen and (min-width:  576px) {
 
-    body{
-        /* background-color: GREEN; */
-    }
+      /* ____ EMPTY _____  */
 
-    
-
-
-
-
-
-
-
+}
 
    /* /////////////////////// MD /////////////////// */
 
@@ -466,7 +484,7 @@ footer h6 i{
         margin-top: 2rem;
     }
 
-     /* console playstation  */
+     /* console playstation md  */
 
     .console_playstation_container .reusable_card h2{
         margin-top: 0;
@@ -476,7 +494,7 @@ footer h6 i{
         margin-bottom: 0;
     }
 
-    /* console pictures   */
+    /* console pictures md   */
 
     .console_pictures_container .col_container h5{
         display: block;
@@ -484,14 +502,14 @@ footer h6 i{
         font-weight: 600;
     }
 
-    /* esplora playstation  */
+    /* esplora playstation md */
 
     #console_explore{
         margin-bottom: 1.5rem;
     }
 
 
-    /* playstation plus  */
+    /* playstation plus md  */
 
 
     .playstation_plus_container .pp_img_container{
@@ -512,13 +530,28 @@ footer h6 i{
         margin-bottom: 0rem;
     }
 
-     /* social media  */
+     /* social media md */
 
    .social_media_container{
     width: 50%;
     margin: 0 auto;
 }
 
+ /* ||||||||||||||||| FOOTER md ||||||||||||||| */
+
+ .top_footer {
+    padding-top: 3rem;
+ }
+ 
+ footer .top_footer h6{
+     margin-top: 0.3rem;
+     margin-bottom: 0;
+ }
+
+ .bottom_footer{
+     margin-top: 0rem;
+ }
+ 
 
 }
 
@@ -540,7 +573,7 @@ footer h6 i{
         display: none;
     }
 
-   /* social media  */
+   /* social media lg */
 
    .social_media_container{
        width: 40%;
