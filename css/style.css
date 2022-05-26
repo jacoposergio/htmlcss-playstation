@@ -185,10 +185,10 @@ header{
   }
 
   .ms_jumbotron_container{
-      background-image: url(../img/returnal-listing-thumb-01-ps5.jpg);
+      background-image: url(../img/jumbo-bg.png);
       background-size: cover;
       background-repeat: no-repeat;
-      background-position-x: 90%;
+      background-position-x: 50%;
       margin-bottom: 1rem;
       position: relative;
       z-index: 0;
@@ -245,6 +245,7 @@ header{
  .console_reveal_container .reusable_card h3{
      text-transform: uppercase;
      font-size: 0.7rem;
+     font-weight: 600;
      color:  #2d64e6;
      margin-top: 2.5rem;
  }
@@ -263,7 +264,13 @@ header{
 
  .console_pictures_container .col_container{
      margin-top: 0.5rem;
+     transition: 0.5s;
  }
+
+ .console_pictures_container .col_container img:hover {
+    transform: translate(0, -10px);
+  }
+
 
  .console_pictures_container .col_container h5{
      display: none;
@@ -331,8 +338,7 @@ header{
 }
 
 .console_explore_container .reusable_card h2{
-    margin-top: 2.5rem;
-    font-size: 1.3rem;
+    margin-top: 3rem;
 }
 
 .console_explore_container .reusable_card p{
@@ -346,29 +352,29 @@ header{
     padding-bottom: 0;
 }
 
-.playstation_plus_container .img_container{
+.playstation_plus_now_container .img_container{
     width: 60%;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.playstation_plus_container h3{
+.playstation_plus_now_container h3{
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
 }
 
-.playstation_plus_container .pp_img_container{
+.playstation_plus_now_container .pp_img_container{
     display: none;
 }
 
-.playstation_plus_container .ms_btn{
+.playstation_plus_now_container .ms_btn{
     margin-bottom: 2rem;
 }
 
 /* new promos  */
 
 .new_promos_container h2{
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .new_promos_container .img_container{
@@ -522,21 +528,21 @@ footer .bottom_footer h6{
     /* playstation plus md  */
 
 
-    .playstation_plus_container .pp_img_container{
+    .playstation_plus_now_container .pp_img_container{
         display: block;
     }
 
-    .playstation_plus_container .img_container{
+    .playstation_plus_now_container .img_container{
         margin-top: 0rem;
         margin-bottom: 1rem;
     }
 
-    .playstation_plus_container h3{
+    .playstation_plus_now_container h3{
         margin-bottom: 1rem;
     }
 
 
-    .playstation_plus_container .ms_btn{
+    .playstation_plus_now_container .ms_btn{
         margin-bottom: 0rem;
     }
 
