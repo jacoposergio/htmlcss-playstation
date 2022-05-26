@@ -120,60 +120,61 @@ header{
    /* bottom header  */
 
    .bottom_header{
-       height: 3rem;
-       background-color: white;
-   }
+    height: 3rem;
+    background-color: white;
+}
 
-   .navbar{
-       padding-top: 0;
-       padding-bottom: 0;
-   }
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
-  /* selettore elemento dropdown uguale a quello di bootstrap */
+/* selettore elemento dropdown uguale a quello di bootstrap */
 .navbar-expand-lg .navbar-nav .dropdown-menu {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
+ position: fixed;
+ top: 70px;
+ left: 0;
+ right: 0;
 }
 
 /* primo elemento lista (con le immagini playstation) */
 .navbar-expand-lg .navbar-nav .play-menu {
-    display: flex;
-    justify-content: center;
+ display: flex;
+ justify-content: center;
 }
 
 /* elementi dentro a .play-menu (quelli con le immagini playstation + link) */
 .navbar-expand-lg .navbar-nav .play-menu-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: fit-content;
 }
 
 /* elemento lista in basso (dopo la linea) */
 .navbar-expand-lg .navbar-nav .bottom-play-menu ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+ display: flex;
+ justify-content: center;
+ gap: 20px;
 }
 
 .nav-link{
-    font-size: 0.8rem;
-    font-weight: 600;
+ font-size: 0.8rem;
+ font-weight: 600;
 }
 
 .navbar-nav .btn{
-    font-size: 0.8rem;
+ font-size: 0.8rem;
 }
 
 .lens_container{
-    padding-top: 0.2rem;
+ padding-top: 0.2rem;
 }
 
 .navbar-toggler-icon{
-    width: 0.8rem;
+ width: 0.8rem;
 }
+
 
 
 /* |||||||||||||||||||| MAIN |||||||||||||||||||||||    */
@@ -337,6 +338,7 @@ header{
     vertical-align: super;
 }
 
+
 .console_explore_container .reusable_card h2{
     margin-top: 3rem;
 }
@@ -344,6 +346,19 @@ header{
 .console_explore_container .reusable_card p{
     font-size: 0.9rem;
 }
+
+.console_pictures_container img{
+    padding: 0.5rem;
+}
+
+.console_explore_container .col .img_container{
+    opacity: 0.9;
+}
+
+.console_explore_container .col .img_container:hover{
+    opacity: 1;
+}
+
 
 /* playstation plus  */
 
@@ -411,6 +426,16 @@ header{
      margin-top: 2.5rem;
      margin-bottom: 2rem;
 }
+
+#social_media .col .img_container{
+    transition: 0.2s;
+}
+
+#social_media .col .img_container:hover{
+    transform: scale(0.9);
+}
+
+
 
 
 /* ||||||||||||||| FOOTER  |||||||||||||||  */
@@ -567,7 +592,6 @@ footer .bottom_footer h6{
     .bottom_footer{
         margin-top: 0rem;
     }
-    
 
 }
 
