@@ -119,66 +119,61 @@ header{
    
    /* bottom header  */
 
-  
    .bottom_header{
-    height: 3rem;
-    background-color: white;
+       height: 3rem;
+       background-color: white;
+   }
+
+   .navbar{
+       padding-top: 0;
+       padding-bottom: 0;
+   }
+
+  /* selettore elemento dropdown uguale a quello di bootstrap */
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
 }
 
-.bottom_header_content {
-    height: 100%;
+/* primo elemento lista (con le immagini playstation) */
+.navbar-expand-lg .navbar-nav .play-menu {
+    display: flex;
+    justify-content: center;
 }
 
-.play_logo_container{
-    padding-left: 0.5rem;
-    padding-right: 0.7rem;
+/* elementi dentro a .play-menu (quelli con le immagini playstation + link) */
+.navbar-expand-lg .navbar-nav .play-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
 }
 
-.play_logo_container img{
- height: 100%;
+/* elemento lista in basso (dopo la linea) */
+.navbar-expand-lg .navbar-nav .bottom-play-menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
- .main_menu{
-     display: none;
-     height: 100%;
-     align-items: center;
- }
-
- .main_menu ul li{
-     font-size: 0.8rem;
-     font-weight: 600;
-     margin-right: 1rem;
- }
-
-.main_menu ul li .chevron{
- height: 0.5rem;
- margin-left: 0.5rem;
+.nav-link{
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 
-img.chevron{
- height: 0.5rem;
+.navbar-nav .btn{
+    font-size: 0.8rem;
 }
 
-.main_menu ul li .ms_lens{
- height: 1.3rem;
+.lens_container{
+    padding-top: 0.2rem;
 }
 
- .hamburger_menu{
-     padding: 0 1rem;
- }
-
- .hamburger_menu_container{
-     align-items: center;
-     height: 3rem;
- }
-
- .hamburger_menu a i{
-     font-size: 1.4rem;
- }
-
- a.ms_btn:hover{
-     color: white;
- }
+.navbar-toggler-icon{
+    width: 0.8rem;
+}
 
 
 /* |||||||||||||||||||| MAIN |||||||||||||||||||||||    */
@@ -342,7 +337,6 @@ img.chevron{
     vertical-align: super;
 }
 
-
 .console_explore_container .reusable_card h2{
     margin-top: 3rem;
 }
@@ -350,19 +344,6 @@ img.chevron{
 .console_explore_container .reusable_card p{
     font-size: 0.9rem;
 }
-
-.console_pictures_container img{
-    padding: 0.5rem;
-}
-
-.console_explore_container .col .img_container{
-    opacity: 0.9;
-}
-
-.console_explore_container .col .img_container:hover{
-    opacity: 1;
-}
-
 
 /* playstation plus  */
 
@@ -430,16 +411,6 @@ img.chevron{
      margin-top: 2.5rem;
      margin-bottom: 2rem;
 }
-
-#social_media .col .img_container{
-    transition: 0.2s;
-}
-
-#social_media .col .img_container:hover{
-    transform: scale(0.9);
-}
-
-
 
 
 /* ||||||||||||||| FOOTER  |||||||||||||||  */
@@ -596,6 +567,7 @@ footer .bottom_footer h6{
     .bottom_footer{
         margin-top: 0rem;
     }
+    
 
 }
 
@@ -608,12 +580,6 @@ footer .bottom_footer h6{
    .main_menu{
     display: flex;
    }
-
-    /* bottom header lg  */
-
-    .hamburger_menu{
-        display: none;
-    }
 
    /* social media lg */
 
